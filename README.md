@@ -32,10 +32,10 @@ npm run start:multy
 
 ## To user
 
-Install all dependencies using `npm ci`.
-Add `.env` file and set PORT=`port number` to run on the desired port. 
-Run in desired mode.
-Use [Postman](https://www.postman.com/downloads/) to test the requests.
+Install all dependencies using `npm ci`.  
+Add `.env` file and set PORT=`port number` to run on the desired port.  
+Run in desired mode.  
+Use [Postman](https://www.postman.com/downloads/) to test the requests.  
 
 
 
