@@ -1,5 +1,10 @@
+import { config } from 'dotenv';
 import cluster from "cluster";
 import { cpus } from "os";
+
+import {startServer} from './server';
+
+config();
 
 if(cluster.isPrimary) {
 
@@ -18,11 +23,5 @@ if(cluster.isPrimary) {
 }
 
 if(cluster.isWorker) {
-  (async () => {
-    try {
-      await import('./index');
-    } catch(e) {
-      console.log(e);
-    }
-  })()
+  startServer();
 }
