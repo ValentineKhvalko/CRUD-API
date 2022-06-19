@@ -1,0 +1,28 @@
+{
+	"compilerOptions": {
+		"types": ["node", "webpack-env"],
+		"typeRoots": [ "./node_modules/@types" ],
+		"moduleResolution": "node",
+		"forceConsistentCasingInFileNames": true,
+		"esModuleInterop": true,
+		"outDir": "./dist/",
+		"strict": true,
+		"module": "esnext",
+		"target": "esnext",
+		"allowJs": true,
+		"isolatedModules": true,
+		"skipLibCheck": true,
+		"baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"]
+    }
+	},
+	"ts-node": {
+		"esm": true,
+		"compilerOptions": {
+      "module": "CommonJS",
+    }
+	},
+	"include": ["**/*.ts"],
+  "exclude": ["node_modules", "./dist/**/*"]
+}
