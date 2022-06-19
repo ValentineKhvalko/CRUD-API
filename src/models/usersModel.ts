@@ -19,15 +19,20 @@ export const create = (user: User) => (
   new Promise((resolve) => {
     const id = uuidv4();
     users[id] = user;
-
-    return resolve({id, ...user});
+    resolve({id, ...user});
   })
 )
 
 export const update = (id: string, user:User) => (
   new Promise((resolve) => {
     users[id] = user;
-
-    return(resolve({id, ...user}))
+    resolve({id, ...user})
   })
 )
+
+export const deleteRecord = (id: string):Promise<void> => (
+  new Promise((resolve) => {
+    delete users[id];
+    resolve()
+  })
+) 

@@ -1,0 +1,1 @@
+export const REG_EX_API_USERS = /\/api\/users\//;
