@@ -7,6 +7,7 @@
   "scripts": {
     "start:dev": "cross-env nodemon ./src/index.ts",
     "start:prod": "cross-env webpack --config ./webpack/prod.js && node ./dist/index.js",
+    "start:multy": "cross-env webpack --config ./webpack/multy.js && node ./dist/multy.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "esfeeder@gmail.com",

@@ -3,12 +3,12 @@ const path = require('path');
 module.exports = {
   mode: 'production',
   entry: {
-    server: path.resolve(__dirname, '../src/index.ts'),
+    server: path.resolve(__dirname, '../src/cluster.ts'),
   },
   target: 'node',
   output: {
     publicPath: '',
-    filename: 'index.js',
+    filename: 'multy.js',
     path: path.resolve(__dirname, '../dist'),
     libraryTarget: 'umd',
     globalObject: 'this',
